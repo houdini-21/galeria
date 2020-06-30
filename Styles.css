@@ -61,26 +61,55 @@ body {
   height: 390px;
 }
 
-.imagen1 {
-  background-image: url(https://pixabay.com/get/54e5dc424255a814f6d1867dda29327c173cd9e0544c704c7c2c7fd3944bc75b_1920.jpg);
+.montanas1 {
+  background-image: url(./Sources/mountain1.jpg);
   max-width: 100%;
   background-position: center;
   background-size: cover;
 }
 
-.imagen2 {
-  background-image: url(https://pixabay.com/get/52e6d4404d51a914f6d1867dda29327c173cd9e0544c704c7c2c7fd3934ec459_1920.jpg);
+.montanas2 {
+  background-image: url(./Sources/mountain2.jpg);
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.montanas3 {
+  background-image: url(./Sources/mountain3.jpg);
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.montanas4 {
+  background-image: url(./Sources/mountain4.jpg);
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.montanas5 {
+  background-image: url(./Sources/mountain5.jpg);
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.montanas6 {
+  background-image: url(./Sources/mountain6.jpg);
   max-width: 100%;
   background-position: center;
   background-size: cover;
 }
 
 /*
-.imagen-styles {
+.styles1 {
     filter: blur(3px);
 }
+.styles2 {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
 ***/
-
 .caja-style h3 {
   color: #252525;
   font-size: 18px;
@@ -90,28 +119,97 @@ body {
 }
 
 .btn-style {
-    background-color: #0d8bd9;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 15px;
-    margin: 4px 8px;
-    cursor: pointer;
-    border-radius: 5px;
+  background-color: #0d8bd9;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 8px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Lato", sans-serif;
 }
 
 .btn-style:hover {
-    background-color: #08649c;
-    transition: 200ms;
+  background-color: #08649c;
+  transition: 200ms;
 }
 
 .active-btn {
-    background-color: springgreen;
+  background-color: springgreen;
 }
 
 .box-buttons {
-    margin-left: 5%;
+  margin-left: 5%;
+}
+
+.btn-style:focus,
+.btn-categorias-active:focus,
+.btn-categorias:focus {
+  outline: none;
+}
+
+.btn-categorias-active,
+.btn-categorias:hover {
+  background-color: #0d8bd9;
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 3px;
+  cursor: pointer;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-family: "Lato", sans-serif;
+}
+
+.btn-categorias {
+  background-color: #ffffff;
+  border: none;
+  color: #252525;
+  font-weight: 600;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 3px;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+}
+
+.box-btn-categorias {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 1%;
+}
+
+.box-img-categorias {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.imagenes-categorias {
+  width: 195px;
+  height: 125px;
+  margin: 8px;
+  border-radius: 5px;
+}
+
+.imagen-active {
+  border: 2px solid #0d8bd9;
+  border-radius: 5px;
 }

@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="Styles.css" />
   </head>
   <body>
@@ -15,26 +16,43 @@
       <section class="container-galeria">
         <h1>Galeria</h1>
         <article class="galeria">
-            <div class="imagen-container">
-                <div class="imagen-style imagen1"></div>
+          <div class="imagen-container">
+            <div class="imagen-style montanas1"></div>
+          </div>
+          <div class="caja-style">
+            <h3>Agregar estilos</h3>
+            <div class="box-buttons">
+              <button class="btn-style" id="blur">Blur</button>
+              <button class="btn-style" id="sepia">Sepia</button>
+              <button class="btn-style" id="saturacion">Saturacion</button>
+              <button class="btn-style" id="negativo">Negativo</button>
+              <button class="btn-style" id="grises">Escala de grises</button>
             </div>
-            <div class="caja-style">
-                <h3>Agregar estilos</h3>
-                <div class="box-buttons">
-                    <button class="btn-style">Blur</button>
-                    <button class="btn-style">Sepia</button>
-                    <button class="btn-style">Saturacion</button>
-                    <button class="btn-style">Negativo</button>
-                    <button class="btn-style">Escala de grises</button>
-                </div>
-            </div>
+          </div>
         </article>
       </section>
 
       <section class="container-categorias">
         <h1>Categorias</h1>
-        <article class="categorias"></article>
+        <article class="categorias">
+          <div class="box-btn-categorias">
+            <button class="btn-categorias">Montanas</button>
+            <button class="btn-categorias">Playas</button>
+            <button class="btn-categorias">Ciudad</button>
+            <button class="btn-categorias">Paisajes</button>
+          </div>
+          <div class="box-img-categorias">
+            <div class="imagenes-categorias montanas1"></div>
+            <div class="imagenes-categorias montanas2"></div>
+            <div class="imagenes-categorias montanas3"></div>
+            <div class="imagenes-categorias montanas4"></div>
+            <div class="imagenes-categorias montanas5"></div>
+            <div class="imagenes-categorias montanas6"></div>
+          </div>
+        </article>
       </section>
     </main>
+    
+    <script src="./Sources/Scripts.js"></script>
   </body>
 </html>
