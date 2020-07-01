@@ -55,10 +55,13 @@ body {
   margin: 20px;
 }
 .imagen-style {
-  border: 3px solid #0d8bd9;
   border-radius: 10px;
   width: 765px;
   height: 390px;
+}
+
+.hidden {
+  display: none !important;
 }
 
 .montanas1 {
@@ -101,15 +104,148 @@ body {
   background-size: cover;
 }
 
-/*
-.styles1 {
-    filter: blur(3px);
+.playa1 {
+  background-image: url(./Sources/playa1.jpg);
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
 }
-.styles2 {
-  filter: grayscale(100%);
+
+.playa2 {
+  background-image: url(./Sources/playa2.jpg);
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.playa3 {
+  background-image: url(./Sources/playa3.jpg);
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.playa4 {
+  background-image: url(./Sources/playa4.jpg);
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.playa5 {
+  background-image: url(./Sources/playa5.jpg);
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.playa6 {
+  background-image: url(./Sources/playa6.jpg);
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.ciudad1 {
+  background-image: url(./Sources/ciudad1.jpg);
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.ciudad2 {
+  background-image: url(./Sources/ciudad2.jpg);
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.ciudad3 {
+  background-image: url(./Sources/ciudad3.jpg);
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.ciudad4 {
+  background-image: url(./Sources/ciudad4.jpg);
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.ciudad5 {
+  background-image: url(./Sources/ciudad5.jpg);
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.ciudad6 {
+  background-image: url(./Sources/ciudad6.jpg);
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.paisaje1 {
+  background-image: url(./Sources/paisaje1.jpg);
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.paisaje2 {
+  background-image: url(./Sources/paisaje2.jpg);
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.paisaje3 {
+  background-image: url(./Sources/paisaje3.jpg);
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.paisaje4 {
+  background-image: url(./Sources/paisaje4.jpg);
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.paisaje5 {
+  background-image: url(./Sources/paisaje5.jpg);
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.paisaje6 {
+  background-image: url(./Sources/paisaje6.jpg);
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.blur {
+  -webkit-filter: blur(100%);
+  filter: blur(3px);
+}
+.sepia {
+  filter: sepia(100%);
+  -webkit-filter: sepia(100%);
+}
+.saturacion {
+  -webkit-filter: saturate(250%);
+  filter: saturate(250%);
+}
+.negativo {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.grises {
   -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
-***/
+
 .caja-style h3 {
   color: #252525;
   font-size: 18px;
@@ -138,8 +274,8 @@ body {
   transition: 200ms;
 }
 
-.active-btn {
-  background-color: springgreen;
+.style-active {
+  background-color: #0BD990;
 }
 
 .box-buttons {
@@ -152,22 +288,12 @@ body {
   outline: none;
 }
 
-.btn-categorias-active,
+.btn-active,
 .btn-categorias:hover {
-  background-color: #0d8bd9;
-  border: none;
-  color: white;
-  font-weight: 600;
-  padding: 10px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 15px;
-  margin: 4px 3px;
-  cursor: pointer;
+  background-color: #0d8bd9 !important;
+  color: white !important;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  font-family: "Lato", sans-serif;
 }
 
 .btn-categorias {

@@ -1,25 +1,52 @@
-const blur = document.getElementById("blur");
-const sepia = document.getElementById("sepia");
-const saturacion = document.getElementById("saturacion");
-const negativo = document.getElementById("negativo");
-const grises = document.getElementById("grises");
+let estilos = document.getElementById("estilos");
+const imagenes = document.querySelectorAll(".imagenes-categorias");
+const imagen = document.getElementById("imagen");
+const btnEstilos = document.querySelectorAll(".btn-style");
+const btnCategorias = document.querySelectorAll(".btn-categorias");
+let imagenOld;
+let btnOld = false;
 
-blur.addEventListener("click", function (e) {
-  alert("efecto blur");
+btnEstilos.forEach(function () {
+  for (let i = 0; i < btnEstilos.length; i++) {
+    btnEstilos[i].addEventListener("click", agregarEstilos);
+  }
 });
 
-sepia.addEventListener("click", function (e) {
-  alert("efecto blur");
+imagenes.forEach(function () {
+  for (let i = 0; i < imagenes.length; i++) {
+    imagenes[i].addEventListener("click", mostrar);
+  }
 });
 
-saturacion.addEventListener("click", function (e) {
-  alert("efecto blur");
+btnCategorias.forEach(function () {
+  for (let i = 0; i < btnCategorias.length; i++) {
+    btnCategorias[i].addEventListener("click", cambiarCategoria);
+  }
 });
 
-negativo.addEventListener("click", function (e) {
-  alert("efecto blur");
-});
+function agregarEstilos(h) {
+  const style = h.srcElement.id;
+  estilos.classList.toggle(style);
+}
+function mostrar(o) {
+  const image = o.srcElement.id;
+  console.log(imagenOld);
+  imagen.classList.replace(imagenOld, image);
+  imagenOld = image;
+  console.log(image);
+}
 
-grises.addEventListener("click", function (e) {
-  alert("efecto blur");
-});
+function cambiarCategoria(u) {
+  const btn = u.srcElement.classList;
+  const categoria = u.srcElement.id;
+  console.log(btn);
+  btn.add("btn-active");
+  if (btnOld != "") {
+    btnOld.remove("btn-active");
+  }
+  btnOld = btn;
+}
+
+/**  document.getElementById('btn-playa').addEventListener('click', function(e){
+  document.getElementById('playa').style.display = 'block';
+})*/
