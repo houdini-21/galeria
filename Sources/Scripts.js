@@ -6,7 +6,7 @@ const btnCategorias = document.querySelectorAll(".btn-categorias");
 const boxImgCategorias = document.querySelectorAll(".box-img-categorias");
 let imagenOld = "montanas1";
 let style = "";
-let btnOld = "";
+let btnOldId = "montanas-btn";
 let styledImage = false;
 
 btnEstilos.forEach(function (h) {
@@ -24,10 +24,27 @@ btnCategorias.forEach(function (u, index) {
   });
 });
 
+function cambiarCategoria(i) {
+  const btnNewId = i.id;
+  const btnNew = document.getElementById(btnNewId).classList;
+  const btnOld = document.getElementById(btnOldId).classList;
+  if (btnOld !== btnNewId) {
+    btnOld.remove("btn-active");
+    btnNew.add("btn-active");
+    console.log(btnNewId, "remplazara a", btnOld);
+    btnOldId = btnNewId;
+    console.log(btnOld, "remplazo a", btnNewId);
+  }
+}
+
+function ocultarCategoria(d, m) {
+  const categoriaBox = d[m].classList;
+  categoriaBox.remove("hidden");
+}
+
 function agregarEstilosaImagen(o) {
   style = o.srcElement.id;
   const btnStyle = o.srcElement.classList;
-
   btnStyle.toggle("style-active");
   estilos.classList.toggle(style);
   styledImage = true;
@@ -40,20 +57,6 @@ function mostrarImagenSeleccionada(d) {
   if (styledImage == true) {
     estilos.classList.remove(style);
   }
-}
-
-function cambiarCategoria(i) {
-  const btn = i.classList;
-  if (btnOld !== "") {
-    btnOld.remove("btn-active");
-  }
-  btn.add("btn-active");
-  btnOld = btn;
-}
-
-function ocultarCategoria(d, m) {
-  const categoriaBox = d[m].classList;
-  categoriaBox.remove("hidden");
 }
 
 /**  document.getElementById('btn-playa').addEventListener('click', function(e){
