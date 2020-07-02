@@ -3,48 +3,57 @@ const imagenes = document.querySelectorAll(".imagenes-categorias");
 const imagen = document.getElementById("imagen");
 const btnEstilos = document.querySelectorAll(".btn-style");
 const btnCategorias = document.querySelectorAll(".btn-categorias");
-let imagenOld;
-let btnOld = false;
+const boxImgCategorias = document.querySelectorAll(".box-img-categorias");
+let imagenOld = "montanas1";
+let style = "";
+let btnOld = "";
+let styledImage = false;
 
-btnEstilos.forEach(function () {
-  for (let i = 0; i < btnEstilos.length; i++) {
-    btnEstilos[i].addEventListener("click", agregarEstilos);
-  }
+btnEstilos.forEach(function (h) {
+  h.addEventListener("click", agregarEstilosaImagen);
 });
 
-imagenes.forEach(function () {
-  for (let i = 0; i < imagenes.length; i++) {
-    imagenes[i].addEventListener("click", mostrar);
-  }
+imagenes.forEach(function (o) {
+  o.addEventListener("click", mostrarImagenSeleccionada);
 });
 
-btnCategorias.forEach(function () {
-  for (let i = 0; i < btnCategorias.length; i++) {
-    btnCategorias[i].addEventListener("click", cambiarCategoria);
-  }
+btnCategorias.forEach(function (u, index) {
+  u.addEventListener("click", function () {
+    ocultarCategoria(boxImgCategorias, index);
+    cambiarCategoria(u);
+  });
 });
 
-function agregarEstilos(h) {
-  const style = h.srcElement.id;
+function agregarEstilosaImagen(o) {
+  style = o.srcElement.id;
+  const btnStyle = o.srcElement.classList;
+
+  btnStyle.toggle("style-active");
   estilos.classList.toggle(style);
+  styledImage = true;
 }
-function mostrar(o) {
-  const image = o.srcElement.id;
-  console.log(imagenOld);
+
+function mostrarImagenSeleccionada(d) {
+  const image = d.srcElement.id;
   imagen.classList.replace(imagenOld, image);
   imagenOld = image;
-  console.log(image);
+  if (styledImage == true) {
+    estilos.classList.remove(style);
+  }
 }
 
-function cambiarCategoria(u) {
-  const btn = u.srcElement.classList;
-  const categoria = u.srcElement.id;
-  console.log(btn);
-  btn.add("btn-active");
-  if (btnOld != "") {
+function cambiarCategoria(i) {
+  const btn = i.classList;
+  if (btnOld !== "") {
     btnOld.remove("btn-active");
   }
+  btn.add("btn-active");
   btnOld = btn;
+}
+
+function ocultarCategoria(d, m) {
+  const categoriaBox = d[m].classList;
+  categoriaBox.remove("hidden");
 }
 
 /**  document.getElementById('btn-playa').addEventListener('click', function(e){
