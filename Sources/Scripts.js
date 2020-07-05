@@ -21,15 +21,15 @@ imagenes.forEach(function (o) {
 btnCategorias.forEach(function (u, index) {
   u.addEventListener("click", function () {
     ocultarCategoria(boxImgCategorias, index);
-    cambiarCategoria(u);
+    cambiarColorBtnCategoria(u);
   });
 });
 
-function cambiarCategoria(d) {
+function cambiarColorBtnCategoria(d) {
   const btnNewId = d.id;
   const btnNew = document.getElementById(btnNewId).classList;
   const btnOld = document.getElementById(btnOldId).classList;
-  if (btnOld !== btnNewId) {
+  if (btnOldId !== btnNewId) {
     btnOld.remove("btn-active");
     btnNew.add("btn-active");
     btnOldId = btnNewId;
@@ -41,9 +41,11 @@ function ocultarCategoria(i, n) {
   const categoriaBoxNew = document.getElementById(categoriaBoxNewId).classList;
   const categoriaBoxOld = document.getElementById(categoriaBoxOldId).classList;
 
-  if (categoriaBoxOld !== categoriaBoxNewId) {
+  if (categoriaBoxOldId !== categoriaBoxNewId) {
     categoriaBoxOld.add("hidden");
+    categoriaBoxOld.remove("fadeIn");
     categoriaBoxNew.remove("hidden");
+    categoriaBoxNew.add("fadeIn");
     categoriaBoxOldId = categoriaBoxNewId;
   }
 }
@@ -65,10 +67,3 @@ function mostrarImagenSeleccionada(b) {
     btnStyle.remove("style-active");
   }
 }
-
-/**  document.getElementById('btn-playa').addEventListener('click', function(e){
-  document.getElementById('playa').style.display = 'block';
-  document.getElementById('montana').style.display = 'none';
-  document.getElementById('ciudad').style.display = 'none';
-  document.getElementById('paisaje').style.display = 'none';
-})*/
