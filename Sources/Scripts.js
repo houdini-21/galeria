@@ -10,22 +10,22 @@ let categoriaBoxOldId = "montanas";
 let styledImage = false;
 let btnStyle, style;
 
-btnEstilos.forEach(function (h) {
+btnEstilos.forEach((h) => {
   h.addEventListener("click", agregarEstilosaImagen);
 });
 
-imagenes.forEach(function (o) {
+imagenes.forEach((o) => {
   o.addEventListener("click", mostrarImagenSeleccionada);
 });
 
-btnCategorias.forEach(function (u, index) {
-  u.addEventListener("click", function () {
+btnCategorias.forEach((u, index) => {
+  u.addEventListener("click", () => {
     ocultarCategoria(boxImgCategorias, index);
     cambiarColorBtnCategoria(u);
   });
 });
 
-function cambiarColorBtnCategoria(d) {
+cambiarColorBtnCategoria = (d) => {
   const btnNewId = d.id;
   const btnNew = document.getElementById(btnNewId).classList;
   const btnOld = document.getElementById(btnOldId).classList;
@@ -34,9 +34,9 @@ function cambiarColorBtnCategoria(d) {
     btnNew.add("btn-active");
     btnOldId = btnNewId;
   }
-}
+};
 
-function ocultarCategoria(i, n) {
+function ocultarCategoria (i, n) {
   const categoriaBoxNewId = i[n].id;
   const categoriaBoxNew = document.getElementById(categoriaBoxNewId).classList;
   const categoriaBoxOld = document.getElementById(categoriaBoxOldId).classList;
@@ -48,15 +48,15 @@ function ocultarCategoria(i, n) {
     categoriaBoxNew.add("fadeIn");
     categoriaBoxOldId = categoriaBoxNewId;
   }
-}
+};
 
-function agregarEstilosaImagen(c) {
+function agregarEstilosaImagen (c) {
   style = c.srcElement.id;
   btnStyle = c.srcElement.classList;
   btnStyle.toggle("style-active");
   estilos.classList.toggle(style);
   styledImage = true;
-}
+};
 
 function mostrarImagenSeleccionada(b) {
   const image = b.srcElement.id;
