@@ -5,14 +5,6 @@ body {
   background-color: #f3f3f3;
 }
 
-.container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
 .container-galeria,
 .container-categorias {
   margin: 10px;
@@ -48,15 +40,12 @@ body {
 }
 
 .imagen-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
   margin: 20px;
 }
+
 .imagen-style {
   border-radius: 10px;
-  width: 765px;
+  width: 100%;
   height: 390px;
 }
 
@@ -64,164 +53,98 @@ body {
   display: none !important;
 }
 
-.montanas1 {
-  background-image: url(./img/montanas/mountain1.jpg);
+.img {
   max-width: 100%;
   background-position: center;
   background-size: cover;
+}
+
+.montanas1 {
+  background-image: url(./img/montanas/mountain1.jpg);
 }
 
 .montanas2 {
   background-image: url(./img/montanas/mountain2.jpg);
-  max-width: 100%;
-  background-position: center;
-  background-size: cover;
 }
 .montanas3 {
   background-image: url(./img/montanas/mountain3.jpg);
-  max-width: 100%;
-  background-position: center;
-  background-size: cover;
 }
 
 .montanas4 {
   background-image: url(./img/montanas/mountain4.jpg);
-  max-width: 100%;
-  background-position: center;
-  background-size: cover;
 }
 .montanas5 {
   background-image: url(./img/montanas/mountain5.jpg);
-  max-width: 100%;
-  background-position: center;
-  background-size: cover;
 }
 
 .montanas6 {
   background-image: url(./img/montanas/mountain6.jpg);
-  max-width: 100%;
-  background-position: center;
-  background-size: cover;
 }
 
 .playa1 {
   background-image: url(./img/playa/playa1.jpg);
-  max-width: 100%;
-  background-position: center;
-  background-size: cover;
 }
 
 .playa2 {
   background-image: url(./img/playa/playa2.jpg);
-  max-width: 100%;
-  background-position: center;
-  background-size: cover;
 }
 .playa3 {
   background-image: url(./img/playa/playa3.jpg);
-  max-width: 100%;
-  background-position: center;
-  background-size: cover;
 }
 
 .playa4 {
   background-image: url(./img/playa/playa4.jpg);
-  max-width: 100%;
-  background-position: center;
-  background-size: cover;
 }
 .playa5 {
   background-image: url(./img/playa/playa5.jpg);
-  max-width: 100%;
-  background-position: center;
-  background-size: cover;
 }
 
 .playa6 {
   background-image: url(./img/playa/playa6.jpg);
-  max-width: 100%;
-  background-position: center;
-  background-size: cover;
 }
 
 .ciudad1 {
   background-image: url(./img/ciudad/ciudad1.jpg);
-  max-width: 100%;
-  background-position: center;
-  background-size: cover;
 }
 
 .ciudad2 {
   background-image: url(./img/ciudad/ciudad2.jpg);
-  max-width: 100%;
-  background-position: center;
-  background-size: cover;
 }
 .ciudad3 {
   background-image: url(./img/ciudad/ciudad3.jpg);
-  max-width: 100%;
-  background-position: center;
-  background-size: cover;
 }
 
 .ciudad4 {
   background-image: url(./img/ciudad/ciudad4.jpg);
-  max-width: 100%;
-  background-position: center;
-  background-size: cover;
 }
 .ciudad5 {
   background-image: url(./img/ciudad/ciudad5.jpg);
-  max-width: 100%;
-  background-position: center;
-  background-size: cover;
 }
 
 .ciudad6 {
   background-image: url(./img/ciudad/ciudad6.jpg);
-  max-width: 100%;
-  background-position: center;
-  background-size: cover;
 }
 
 .bosque1 {
   background-image: url(./img/bosque/bosque1.jpg);
-  max-width: 100%;
-  background-position: center;
-  background-size: cover;
 }
 
 .bosque2 {
   background-image: url(./img/bosque/bosque2.jpg);
-  max-width: 100%;
-  background-position: center;
-  background-size: cover;
 }
 .bosque3 {
   background-image: url(./img/bosque/bosque3.jpg);
-  max-width: 100%;
-  background-position: center;
-  background-size: cover;
 }
 
 .bosque4 {
   background-image: url(./img/bosque/bosque4.jpg);
-  max-width: 100%;
-  background-position: center;
-  background-size: cover;
 }
 .bosque5 {
   background-image: url(./img/bosque/bosque5.jpg);
-  max-width: 100%;
-  background-position: center;
-  background-size: cover;
 }
 
 .bosque6 {
   background-image: url(./img/bosque/bosque6.jpg);
-  max-width: 100%;
-  background-position: center;
-  background-size: cover;
 }
 
 .blur {
@@ -284,13 +207,6 @@ body {
   background-color: #053451;
 }
 
-.box-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
 .btn-style:focus,
 .btn-categorias-active:focus,
 .btn-categorias:focus {
@@ -320,35 +236,35 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-.box-btn-categorias {
+.box-btn-categorias,
+.container,
+.box-img-categorias,
+.box-buttons,
+.imagen-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-
-.box-img-categorias {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: flex-start;
-}
-
 .imagenes-categorias {
   width: 195px;
   height: 125px;
   margin: 8px;
   border-radius: 5px;
   cursor: pointer;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  transition: transform 0.5s;
 }
 
 .imagenes-categorias:hover {
-  -webkit-filter: saturate(150%);
-  filter: saturate(150%);
+  transform: scale(1.1);
+}
+
+.img-selected {
+  box-sizing: border-box;
+  border: 3px solid #0d8bd9;
+  border-radius: 5px;
+  transition: 500ms;
 }
 
 .fadeIn {

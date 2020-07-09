@@ -3,25 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Planetary-Edit pic</title>
+    <title>Planetary-Gallery</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
 
     <link rel="stylesheet" href="./Sources/Styles.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./Sources/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./Sources/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./Sources/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./Sources/favicon/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./Sources/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./Sources/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./Sources/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./Sources/favicon/site.webmanifest" />
   </head>
   <body>
     <main class="container">
       <section class="container-galeria">
         <h1>Galeria</h1>
         <article class="galeria">
-          <div class="imagen-container" id="estilos">
-            <div class="imagen-style montanas1" id="imagen"></div>
+          <div class="imagen-container" id="containerStyles">
+            <div class="imagen-style img montanas1" id="imagen"></div>
           </div>
           <div class="caja-style">
             <h3>Agregar estilos</h3>
@@ -40,47 +54,51 @@
         <h1>Categorias</h1>
         <article class="categorias">
           <div class="box-btn-categorias">
-            <button class="btn-categorias btn-active" id="montanas-btn">Montanas</button>
+            <button class="btn-categorias btn-active" id="montanas-btn">
+              Montanas
+            </button>
             <button class="btn-categorias" id="playa-btn">Playas</button>
             <button class="btn-categorias" id="ciudad-btn">Ciudad</button>
             <button class="btn-categorias" id="bosque-btn">Bosques</button>
           </div>
-          <div class="box-img-categorias fadeIn" id="montanas"> 
-            <div class="imagenes-categorias overlay montanas1" id="montanas1"></div>
-            <div class="imagenes-categorias montanas2" id="montanas2"></div>
-            <div class="imagenes-categorias montanas3" id="montanas3"></div>
-            <div class="imagenes-categorias montanas4" id="montanas4"></div>
-            <div class="imagenes-categorias montanas5" id="montanas5"></div>
-            <div class="imagenes-categorias montanas6" id="montanas6"></div>
-					</div>
-					<div class="box-img-categorias hidden" id="playa">
-            <div class="imagenes-categorias playa1" id="playa1"></div>
-            <div class="imagenes-categorias playa2" id="playa2"></div>
-            <div class="imagenes-categorias playa3" id="playa3"></div>
-            <div class="imagenes-categorias playa4" id="playa4"></div>
-            <div class="imagenes-categorias playa5" id="playa5"></div>
-            <div class="imagenes-categorias playa6" id="playa6"></div>
-					</div>
-					<div class="box-img-categorias hidden" id="ciudad">
-            <div class="imagenes-categorias ciudad1" id="ciudad1"></div>
-            <div class="imagenes-categorias ciudad2" id="ciudad2"></div>
-            <div class="imagenes-categorias ciudad3" id="ciudad3"></div>
-            <div class="imagenes-categorias ciudad4" id="ciudad4"></div>
-            <div class="imagenes-categorias ciudad5" id="ciudad5"></div>
-            <div class="imagenes-categorias ciudad6" id="ciudad6"></div>
-					</div>
-					<div class="box-img-categorias hidden" id="bosque">
-            <div class="imagenes-categorias bosque1" id="bosque1"></div>
-            <div class="imagenes-categorias bosque2" id="bosque2"></div>
-            <div class="imagenes-categorias bosque3" id="bosque3"></div>
-            <div class="imagenes-categorias bosque4" id="bosque4"></div>
-            <div class="imagenes-categorias bosque5" id="bosque5"></div>
-            <div class="imagenes-categorias bosque6" id="bosque6"></div>
+          <div class="box-img-categorias fadeIn" id="montanas">
+            <div
+              class="imagenes-categorias img montanas1 img-selected"
+              id="montanas1"
+            ></div>
+            <div class="imagenes-categorias img montanas2" id="montanas2"></div>
+            <div class="imagenes-categorias img montanas3" id="montanas3"></div>
+            <div class="imagenes-categorias img montanas4" id="montanas4"></div>
+            <div class="imagenes-categorias img montanas5" id="montanas5"></div>
+            <div class="imagenes-categorias img montanas6" id="montanas6"></div>
+          </div>
+          <div class="box-img-categorias hidden" id="playa">
+            <div class="imagenes-categorias img playa1" id="playa1"></div>
+            <div class="imagenes-categorias img playa2" id="playa2"></div>
+            <div class="imagenes-categorias img playa3" id="playa3"></div>
+            <div class="imagenes-categorias img playa4" id="playa4"></div>
+            <div class="imagenes-categorias img playa5" id="playa5"></div>
+            <div class="imagenes-categorias img playa6" id="playa6"></div>
+          </div>
+          <div class="box-img-categorias hidden" id="ciudad">
+            <div class="imagenes-categorias img ciudad1" id="ciudad1"></div>
+            <div class="imagenes-categorias img ciudad2" id="ciudad2"></div>
+            <div class="imagenes-categorias img ciudad3" id="ciudad3"></div>
+            <div class="imagenes-categorias img ciudad4" id="ciudad4"></div>
+            <div class="imagenes-categorias img ciudad5" id="ciudad5"></div>
+            <div class="imagenes-categorias img ciudad6" id="ciudad6"></div>
+          </div>
+          <div class="box-img-categorias hidden" id="bosque">
+            <div class="imagenes-categorias img bosque1" id="bosque1"></div>
+            <div class="imagenes-categorias img bosque2" id="bosque2"></div>
+            <div class="imagenes-categorias img bosque3" id="bosque3"></div>
+            <div class="imagenes-categorias img bosque4" id="bosque4"></div>
+            <div class="imagenes-categorias img bosque5" id="bosque5"></div>
+            <div class="imagenes-categorias img bosque6" id="bosque6"></div>
           </div>
         </article>
       </section>
     </main>
-
-    <script src="./Sources/Scripts.js"></script>
   </body>
+  <script src="./Sources/Scripts.js"></script>
 </html>
